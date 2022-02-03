@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#313335"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:rotation="180"
+                android:src="@drawable/ic_baseline_format_quote_24"
+                android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#313335"
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        android:hint = "Quote"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_alignBottom="@id/description"
+                android:layout_marginTop="30dp"
+                android:layout_toLeftOf="@id/description"
+                android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="50dp"
+                android:background="#313335"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:hint="Author's Name"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cardLast"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            app:cardBackgroundColor="#313335"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="2dp">
+
+            <ImageView
+                android:id="@+id/copyClipArt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_baseline_content_copy_24" />
+
+
+            <ImageView
+                android:id="@+id/editClipArt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:src="@drawable/ic_baseline_edit_24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_gravity="right"
+
+                android:layout_marginRight="30dp"/>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/cardLast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        app:cardBackgroundColor="#313335"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copyBtn"
+            android:backgroundTint="#313335"
+            android:text="Copy"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editBtn"
+            android:backgroundTint="#313335"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareBtn"
+            android:backgroundTint="#313335"
+            android:layout_gravity="right"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
